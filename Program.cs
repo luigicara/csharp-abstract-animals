@@ -16,13 +16,13 @@
                 animale.Dormi();
                 animale.Mangia();
                 animale.Verso();
-
-                if (animale is IVolante)
-                    FaiVolare((IVolante)animale);
-                else if (animale is INuotante)
-                    FaiNuotare((INuotante)animale);
                 Console.WriteLine();
             }
+
+            FaiNuotare(cane);
+            FaiVolare(passerotto);
+            FaiVolare(aquila);
+            FaiNuotare(delfino);
         }
 
         public static void FaiNuotare(INuotante animale)
